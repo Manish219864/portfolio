@@ -222,17 +222,20 @@ export const education = [
 // ---- EXPERIENCE / ACTIVITIES ----
 export const experience = [
   {
-    role: 'Contributor — Logistics System Design',
-    company: 'YaarIdeal (E-commerce Platform)',
-    period: '2024',
-    type: 'Contribution',
+    role: 'Open-Source Contributor — Mesa-Geo',
+    company: 'Mesa-Geo',
+    period: '2026',
+    type: 'Open Source',
     description:
-      'Contributed to the design and development of a logistics and order management system for an emerging e-commerce platform, focusing on backend architecture and workflow optimization.',
+      'Contributed to the Mesa-Geo open-source geospatial project by working on a PropertyLayer-based refactor of RasterLayer, focusing on modular architecture, delegation, backward compatibility, and testing.',
     highlights: [
-      'Designed logistics system architecture',
-      'Backend workflow optimization',
-      'System integration planning',
+      'Refactored RasterLayer around a PropertyLayer abstraction to improve separation of concerns and modularity.',
+      'Implemented delegation logic while preserving backward-compatible behavior.',
+      'Added and updated tests to validate the refactored functionality.',
+      'Worked with the existing Mesa-Geo architecture and submitted the changes for maintainer review.',
     ],
+    prText: 'PR #321',
+    prUrl: '', // Add your GitHub PR URL here when ready
   },
 ];
 
@@ -281,11 +284,38 @@ export const certifications = [
     name: 'ISRO IIRS — Remote Sensing & Image Analysis',
     issuer: 'Indian Space Research Organisation (ISRO)',
     year: '2024',
-    credentialId: null, // PLACEHOLDER
+    type: 'Certification',
+    credentialId: null,
     icon: '🛰️',
     color: '#22d3ee',
   },
-  // PLACEHOLDER — Add more certifications here as you complete them
+  {
+    name: 'SmartBridge — Experiential Learning in Artificial Intelligence & Machine Learning',
+    issuer: 'SmartBridge',
+    year: 'Jun–Aug 2025',
+    type: 'Experiential Learning',
+    credentialId: null,
+    icon: '🤖',
+    color: '#6366f1',
+  },
+  {
+    name: 'Google Cloud Innovator Program',
+    issuer: 'Google Cloud',
+    year: '',
+    type: 'Program',
+    credentialId: null,
+    icon: '☁️',
+    color: '#6366f1',
+  },
+  {
+    name: 'Google I/O 2026',
+    issuer: 'Google',
+    year: '',
+    type: 'Event / Program',
+    credentialId: null,
+    icon: '🎯',
+    color: '#7c3aed',
+  },
 ];
 
 // ---- NAV LINKS ----

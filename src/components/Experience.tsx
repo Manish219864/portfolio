@@ -2,6 +2,7 @@
 // Experience.tsx — Timeline layout
 // =============================================
 import { motion } from 'framer-motion';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import { experience } from '../data';
 
 export default function Experience() {
@@ -17,7 +18,7 @@ export default function Experience() {
           style={{ marginBottom: '3.5rem' }}
         >
           <span className="mono-badge" style={{ marginBottom: '0.75rem', display: 'inline-block' }}>
-            05. Experience
+            05. Experience &amp; Contributions
           </span>
           <h2 className="section-title">
             What I've <span className="gradient-text">done</span>
@@ -66,38 +67,64 @@ export default function Experience() {
                     </li>
                   ))}
                 </ul>
+
+                {/* PR Link / Badge */}
+                {'prText' in exp && exp.prText && (
+                  <div style={{ marginTop: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    {'prUrl' in exp && exp.prUrl ? (
+                      <a
+                        href={exp.prUrl as string}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                          color: '#22d3ee',
+                          fontSize: '0.8rem',
+                          fontWeight: 600,
+                          textDecoration: 'none',
+                          padding: '0.3rem 0.75rem',
+                          background: 'rgba(34, 211, 238, 0.1)',
+                          border: '1px solid rgba(34, 211, 238, 0.25)',
+                          borderRadius: 8,
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseEnter={e => {
+                          e.currentTarget.style.borderColor = '#22d3ee';
+                          e.currentTarget.style.background = 'rgba(34, 211, 238, 0.2)';
+                        }}
+                        onMouseLeave={e => {
+                          e.currentTarget.style.borderColor = 'rgba(34, 211, 238, 0.25)';
+                          e.currentTarget.style.background = 'rgba(34, 211, 238, 0.1)';
+                        }}
+                      >
+                        <span>{exp.prText as string}</span>
+                        <FaExternalLinkAlt size={10} />
+                      </a>
+                    ) : (
+                      <span
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                          color: '#22d3ee',
+                          fontSize: '0.8rem',
+                          fontWeight: 600,
+                          padding: '0.3rem 0.75rem',
+                          background: 'rgba(34, 211, 238, 0.1)',
+                          border: '1px solid rgba(34, 211, 238, 0.25)',
+                          borderRadius: 8,
+                        }}
+                      >
+                        {exp.prText as string}
+                      </span>
+                    )}
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}
-
-          {/* Placeholder */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.15 }}
-            transition={{ delay: 0.2, duration: 0.6, ease: 'easeOut' }}
-            style={{ display: 'flex', gap: '2rem', paddingLeft: '3rem', position: 'relative' }}
-          >
-            <div style={{
-              position: 'absolute', left: 10, top: 4, width: 22, height: 22, borderRadius: '50%',
-              border: '2px dashed rgba(99,102,241,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center',
-            }}>
-              <span style={{ color: '#4b5563', fontSize: '0.8rem' }}>+</span>
-            </div>
-            <div className="glass-card" style={{
-              padding: '1.25rem 1.5rem', flex: 1, borderStyle: 'dashed',
-              borderColor: 'rgba(99,102,241,0.2)', opacity: 0.6,
-            }}>
-              <div style={{ color: '#64748b', fontSize: '0.85rem' }}>
-                📌 <strong>Internship / Freelance / Research</strong> — Placeholder
-                <br />
-                <span style={{ fontSize: '0.78rem' }}>
-                  Add your internships, freelance work, or research experience in{' '}
-                  <code style={{ color: '#6366f1', fontFamily: 'JetBrains Mono, monospace' }}>src/data.ts</code>
-                </span>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>

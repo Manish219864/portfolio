@@ -20,10 +20,10 @@ import ResumeSection from './components/ResumeSection';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-// ---- Placeholder sections ----
-function GithubPlaceholder() {
+// ---- GitHub Contribution section ----
+function GithubContribution() {
   return (
-    <section style={{ padding: '4rem 0' }}>
+    <section id="github" style={{ padding: '4rem 0' }}>
       <div className="section-wrapper">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,41 +31,36 @@ function GithubPlaceholder() {
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.6, ease: 'easeOut' }}
           className="glass-card"
-          style={{ padding: '2rem', textAlign: 'center', borderStyle: 'dashed', borderColor: 'rgba(99,102,241,0.2)', opacity: 0.65 }}
+          style={{ padding: '2rem', textAlign: 'center' }}
         >
-          <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>📊</div>
-          <h3 style={{ fontWeight: 700, fontSize: '0.95rem', color: 'white', marginBottom: '0.5rem' }}>
-            GitHub Contribution Graph — Placeholder
-          </h3>
-          <p style={{ color: '#64748b', fontSize: '0.82rem' }}>
-            Add your GitHub username to embed a contribution heatmap via{' '}
-            <code style={{ color: '#6366f1', fontFamily: 'JetBrains Mono' }}>github-readme-stats</code> or a similar API.
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem', marginBottom: '0.5rem' }}>
+            <span style={{ fontSize: '1.5rem' }}>📊</span>
+            <h3 style={{ fontWeight: 700, fontSize: '1.05rem', color: 'white' }}>
+              GitHub Contribution Graph
+            </h3>
+          </div>
+          <p style={{ color: '#94a3b8', fontSize: '0.85rem', marginBottom: '1.5rem' }}>
+            Open-source activity &amp; contributions for{' '}
+            <a
+              href="https://github.com/Manish219864"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#22d3ee', textDecoration: 'none', fontWeight: 600 }}
+              onMouseEnter={e => (e.currentTarget.style.textDecoration = 'underline')}
+              onMouseLeave={e => (e.currentTarget.style.textDecoration = 'none')}
+            >
+              @Manish219864
+            </a>
           </p>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
 
-function BlogPlaceholder() {
-  return (
-    <section style={{ padding: '4rem 0' }}>
-      <div className="section-wrapper">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-          className="glass-card"
-          style={{ padding: '2rem', textAlign: 'center', borderStyle: 'dashed', borderColor: 'rgba(99,102,241,0.2)', opacity: 0.65 }}
-        >
-          <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>✍️</div>
-          <h3 style={{ fontWeight: 700, fontSize: '0.95rem', color: 'white', marginBottom: '0.5rem' }}>
-            Blog / Articles — Placeholder
-          </h3>
-          <p style={{ color: '#64748b', fontSize: '0.82rem' }}>
-            Start writing on Hashnode, Dev.to, or Medium and embed your posts here.
-          </p>
+          <div style={{ overflowX: 'auto', padding: '0.5rem 0', display: 'flex', justifyContent: 'center' }}>
+            <img
+              src="https://ghchart.rshah.org/6366f1/Manish219864"
+              alt="Manish Jha's GitHub Contribution Heatmap"
+              style={{ maxWidth: '100%', height: 'auto', borderRadius: '6px' }}
+              loading="lazy"
+            />
+          </div>
         </motion.div>
       </div>
     </section>
@@ -130,9 +125,8 @@ export default function App() {
             <Experience />
             <Education />
             <Achievements />
-            <GithubPlaceholder />
+            <GithubContribution />
             <ResumeSection />
-            <BlogPlaceholder />
             <Contact />
           </main>
 

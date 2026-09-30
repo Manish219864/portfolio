@@ -199,11 +199,11 @@ export default function Contact() {
                 <span>{status === 'sending' ? 'Sending...' : 'Send Message'}</span>
               </button>
 
-              <p style={{ color: '#475569', fontSize: '0.72rem', textAlign: 'center' }}>
-                {EMAILJS_SERVICE_ID && EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID'
-                  ? '✅ EmailJS connected — messages will be delivered to your inbox'
-                  : '⚙️ Add your EmailJS credentials to .env.local to enable this form'}
-              </p>
+              {EMAILJS_SERVICE_ID && EMAILJS_SERVICE_ID !== 'YOUR_SERVICE_ID' && (
+                <p style={{ color: '#475569', fontSize: '0.72rem', textAlign: 'center' }}>
+                  Messages will be delivered directly to my inbox.
+                </p>
+              )}
             </form>
           </motion.div>
         </div>

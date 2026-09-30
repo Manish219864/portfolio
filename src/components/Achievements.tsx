@@ -80,16 +80,16 @@ export default function Achievements() {
           transition={{ delay: 0.3, duration: 0.6, ease: 'easeOut' }}
         >
           <h3 style={{ fontWeight: 700, fontSize: '1.1rem', marginBottom: '1.25rem', color: 'white' }}>
-            Certifications
+            Certifications &amp; Credentials
           </h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', maxWidth: 600 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', maxWidth: 650 }}>
             {certifications.map((cert, i) => (
               <motion.div
                 key={cert.name}
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, amount: 0.1 }}
-                transition={{ delay: 0.3 + i * 0.1, duration: 0.5, ease: 'easeOut' }}
+                transition={{ delay: 0.3 + i * 0.08, duration: 0.5, ease: 'easeOut' }}
                 className="glass-card"
                 style={{
                   padding: '1rem 1.5rem', display: 'flex', alignItems: 'center',
@@ -97,25 +97,27 @@ export default function Achievements() {
                 }}
               >
                 <span style={{ fontSize: '1.5rem', flexShrink: 0 }}>{cert.icon}</span>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontWeight: 700, fontSize: '0.9rem', color: 'white' }}>{cert.name}</div>
-                  <div style={{ color: '#94a3b8', fontSize: '0.8rem', marginTop: '0.15rem' }}>{cert.issuer}</div>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontWeight: 700, fontSize: '0.9rem', color: 'white', wordBreak: 'break-word', lineHeight: 1.4 }}>
+                    {cert.name}
+                  </div>
+                  <div style={{ color: '#94a3b8', fontSize: '0.8rem', marginTop: '0.2rem', display: 'flex', alignItems: 'center', gap: '0.4rem', flexWrap: 'wrap' }}>
+                    <span>{cert.issuer}</span>
+                    {'type' in cert && cert.type && (
+                      <>
+                        <span style={{ color: '#475569' }}>·</span>
+                        <span style={{ color: '#a5b4fc', fontSize: '0.75rem' }}>{cert.type as string}</span>
+                      </>
+                    )}
+                  </div>
                 </div>
-                <span className="cyan-badge">{cert.year}</span>
+                {cert.year ? (
+                  <span className="cyan-badge" style={{ flexShrink: 0, whiteSpace: 'nowrap' }}>
+                    {cert.year}
+                  </span>
+                ) : null}
               </motion.div>
             ))}
-
-            {/* Placeholder */}
-            <div className="glass-card" style={{
-              padding: '1rem 1.5rem', display: 'flex', alignItems: 'center',
-              gap: '1rem', borderStyle: 'dashed', borderColor: 'rgba(99,102,241,0.2)', opacity: 0.5,
-            }}>
-              <span style={{ fontSize: '1.5rem' }}>📜</span>
-              <div style={{ color: '#64748b', fontSize: '0.82rem' }}>
-                More certifications — Placeholder{' '}
-                <span style={{ fontSize: '0.75rem' }}>(Add in src/data.ts → certifications)</span>
-              </div>
-            </div>
           </div>
         </motion.div>
       </div>
