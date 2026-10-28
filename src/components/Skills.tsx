@@ -116,9 +116,9 @@ export default function Skills() {
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'center' }}>
             {[
-              'LLM Evaluation', 'Prompt Testing', 'Reasoning Validation',
-              'Response Evaluation', 'Data Preprocessing', 'Model Optimization',
-              'API Integration', 'Streamlit', 'Authentication',
+              'RAG', 'Vector Embeddings', 'Pydantic', 'Llama3', 'FAISS',
+              'OCR (pdfplumber)', 'NLP', 'Data Preprocessing', 'XGBoost', 'Scikit-learn',
+              'FastAPI', 'Django REST Framework', 'Streamlit', 'Render', 'Plotly', 'Docker',
             ].map(tag => (
               <span key={tag} className="tech-tag">{tag}</span>
             ))}

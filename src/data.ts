@@ -4,95 +4,96 @@
 
 export const personalInfo = {
   name: 'Manish Jha',
-  title: 'AI Engineer',
-  tagline: 'AI Engineer · Machine Learning Developer · Python Backend',
+  title: 'Generative AI Specialist & AI Engineer',
+  tagline: 'Generative AI Specialist · Scalable LLM Applications · Python & LangChain',
   email: 'mjha31018@gmail.com',
   phone: '+91-9653219864',
   location: 'Pune / Mumbai, India',
   linkedin: 'https://www.linkedin.com/in/manish-jha-91664027b/',
   github: 'https://github.com/Manish219864',
   resumeFile: '/Manish_Jha_Resume.pdf',
-  about: `I'm a Computer Science graduate specializing in AI & Machine Learning from D Y Patil University,
-Pune, with a strong CGPA of 8.95. I build production-ready AI systems — from LLM-powered RAG pipelines
-and intelligent ML models to full-stack web applications backed by Django and FastAPI. Passionate about
-solving real-world problems at the intersection of Generative AI, Machine Learning, and Software Engineering,
-I thrive in fast-paced environments where I can turn complex ideas into working products.`,
+  about: `B.Tech CS graduate specializing in Generative AI, with hands-on experience building scalable LLM applications using Python and LangChain. Adept at data preprocessing and deploying AI-driven agents to solve complex business requirements. Graduated from D Y Patil University, Ambi, Pune, with an 8.95 CGPA, with a proven track record delivering production AI systems, RAG pipelines, and high-performance ML models.`,
   strengths: [
-    'AI/LLM Systems Design',
+    'Generative AI & LLM Systems',
+    'Scalable RAG Architecture',
+    'AI-Driven Agents',
     'Production ML Pipelines',
-    'Full-Stack Development',
-    'Problem Solving',
-    'Clean Code Architecture',
+    'Data Preprocessing & OCR',
   ],
-  objective: `Seeking an AI Engineer role where I can contribute to real-world AI applications
-while expanding my expertise in Machine Learning and Generative AI.`,
+  objective: `Seeking an AI Engineer role where I can build scalable Generative AI and LLM applications while contributing to production-grade machine learning systems.`,
 };
 
 // ---- SKILLS ----
 export const skillCategories = [
   {
+    category: 'Generative AI & Data',
+    icon: '✨',
+    skills: [
+      { name: 'RAG Architecture', level: 94 },
+      { name: 'LangChain & AI Agents', level: 92 },
+      { name: 'Vector Embeddings & FAISS', level: 90 },
+      { name: 'Llama3 (via Groq)', level: 90 },
+      { name: 'Pydantic & Schemas', level: 88 },
+      { name: 'OCR (pdfplumber) & NLP', level: 88 },
+      { name: 'Data Preprocessing', level: 92 },
+    ],
+  },
+  {
+    category: 'Machine Learning',
+    icon: '🤖',
+    skills: [
+      { name: 'Scikit-learn', level: 90 },
+      { name: 'XGBoost', level: 88 },
+      { name: 'Classification & Regression', level: 90 },
+      { name: 'Anomaly Detection', level: 86 },
+      { name: 'Feature Engineering', level: 88 },
+      { name: 'Model Evaluation', level: 88 },
+      { name: 'Pandas & NumPy', level: 92 },
+    ],
+  },
+  {
     category: 'Languages',
     icon: '💻',
     skills: [
-      { name: 'Python', level: 92 },
-      { name: 'SQL', level: 82 },
-      { name: 'C++', level: 72 },
-      { name: 'C', level: 68 },
+      { name: 'Python', level: 95 },
+      { name: 'SQL', level: 85 },
+      { name: 'JavaScript', level: 80 },
+      { name: 'C++', level: 75 },
+      { name: 'C', level: 70 },
     ],
   },
   {
-    category: 'AI / ML',
-    icon: '🤖',
-    skills: [
-      { name: 'Machine Learning', level: 88 },
-      { name: 'Scikit-learn', level: 85 },
-      { name: 'LangChain / RAG', level: 83 },
-      { name: 'FAISS / Vector DBs', level: 80 },
-      { name: 'Embeddings', level: 78 },
-      { name: 'Prompt Engineering', level: 82 },
-      { name: 'OpenCV', level: 72 },
-      { name: 'Pandas / NumPy', level: 88 },
-    ],
-  },
-  {
-    category: 'Backend',
+    category: 'Frameworks & Web',
     icon: '⚡',
     skills: [
-      { name: 'Django', level: 85 },
-      { name: 'FastAPI', level: 80 },
-      { name: 'REST APIs', level: 88 },
-      { name: 'PostgreSQL', level: 78 },
-      { name: 'Authentication', level: 75 },
+      { name: 'Django REST Framework', level: 88 },
+      { name: 'FastAPI', level: 85 },
+      { name: 'Streamlit', level: 92 },
+      { name: 'Flask', level: 82 },
+      { name: 'React', level: 80 },
     ],
   },
   {
-    category: 'Frontend',
-    icon: '🎨',
-    skills: [
-      { name: 'React', level: 75 },
-      { name: 'HTML / CSS', level: 80 },
-      { name: 'Streamlit', level: 85 },
-    ],
-  },
-  {
-    category: 'Tools & Platforms',
+    category: 'Tools & Databases',
     icon: '🛠',
     skills: [
-      { name: 'Git / GitHub', level: 88 },
-      { name: 'Docker', level: 72 },
-      { name: 'Postman', level: 82 },
-      { name: 'LLM Evaluation', level: 78 },
+      { name: 'PostgreSQL', level: 85 },
+      { name: 'Docker', level: 80 },
+      { name: 'Render', level: 82 },
+      { name: 'Plotly', level: 88 },
+      { name: 'Git & GitHub', level: 90 },
+      { name: 'REST APIs', level: 90 },
     ],
   },
   {
     category: 'Core Concepts',
     icon: '🧠',
     skills: [
-      { name: 'Data Structures & Algorithms', level: 80 },
-      { name: 'OOPs', level: 85 },
-      { name: 'DBMS', level: 78 },
-      { name: 'Feature Engineering', level: 82 },
-      { name: 'Model Evaluation', level: 83 },
+      { name: 'LLM Evaluation & Validation', level: 88 },
+      { name: 'Data Structures & Algorithms', level: 82 },
+      { name: 'OOPs & Clean Architecture', level: 86 },
+      { name: 'DBMS & Query Optimization', level: 84 },
+      { name: 'Production Pipelines', level: 88 },
     ],
   },
 ];
@@ -101,100 +102,149 @@ export const skillCategories = [
 export const projects = [
   {
     id: 1,
-    title: 'CredIntel — AI Credit Risk Decision Engine',
+    title: 'CredIntel — AI-Powered Credit Analysis',
     status: 'Live',
     category: 'AI/ML',
     description:
-      'An end-to-end AI system combining Machine Learning, NLP, and LLMs (RAG architecture) for intelligent credit risk evaluation, designed to simulate real banking workflows.',
+      'An end-to-end financial intelligence pipeline combining OCR, pdfplumber, and Groq API (Llama3) for multi-source statement extraction, anomaly detection, and automated credit risk appraisal.',
     problem:
-      'Traditional credit appraisal processes are slow, manual, and prone to human bias — particularly for SME borrowers.',
+      'Manual credit appraisal of corporate and SME borrowers is slow, error-prone, and struggles to identify inconsistencies hidden across dense multi-page financial statements.',
     solution:
-      'Built a unified AI pipeline that extracts financial data from PDFs, scores borrower risk using ML models, enriches decisions with real-time web research, and auto-generates Credit Appraisal Memos (CAM) using LLMs.',
+      'Engineered an automated extraction pipeline using pdfplumber, OCR, and Groq API (Llama3). Processed extracted financial records to compute key solvency/liquidity indicators and deployed an interactive Streamlit dashboard featuring dynamic Plotly visualizations.',
     impact:
-      'Automates end-to-end credit analysis, significantly reducing appraisal time while improving consistency and auditability of lending decisions.',
+      'Streamlines credit analysis workflows, accelerates financial indicator calculations, and provides clear visual auditing of potential balance sheet inconsistencies.',
     features: [
-      'Automated financial data extraction from PDFs',
-      'ML-based borrower risk scoring',
-      'Real-time web research + sentiment analysis',
-      'LLM-powered Credit Appraisal Memo (CAM) generator',
-      'Interactive Streamlit dashboard for real-time analysis',
+      'Data Processing: Built extraction pipeline from PDF statements using pdfplumber, OCR, and LLM-assisted processing',
+      'Financial Analysis: Computed financial indicators and flagged potential balance sheet inconsistencies for credit analysis',
+      'Dashboard: Deployed an interactive Streamlit dashboard with Plotly visualizations for financial exploration',
+      'High-throughput inference utilizing the Groq API (Llama3) for rapid document understanding',
+      'Real-time credit decision insights and financial summary generation',
     ],
-    tech: ['Python', 'LangChain', 'RAG', 'FAISS', 'Scikit-learn', 'NLP', 'Streamlit', 'FastAPI'],
-    github: 'https://github.com/Manish219864/credintel', // Update repo name if different
-    demo: null,               // PLACEHOLDER — add your Streamlit/live demo URL when available
+    tech: ['Python', 'Pandas', 'pdfplumber', 'OCR', 'Groq API', 'Llama3', 'Streamlit', 'Plotly', 'LangChain'],
+    github: 'https://github.com/Manish219864/credintel',
+    demo: 'https://credintel.streamlit.app',
     color: '#6366f1',
   },
   {
     id: 2,
-    title: 'HealthGuardAI — Intelligent Insurance Claims Validator',
-    status: 'Completed',
+    title: 'DemandIQ — Retail Demand Forecasting',
+    status: 'Live',
     category: 'AI/ML',
     description:
-      'An ML-based system for automated insurance claim validation and anomaly detection, featuring secure access control and audit mechanisms for sensitive healthcare data.',
+      'A large-scale sales forecasting system trained on 3M+ records across 54 stores and 33 product families, deploying an optimized XGBoost model for store replenishment planning.',
     problem:
-      'Insurance claim fraud and processing inefficiencies cost healthcare providers millions annually and slow down legitimate claims.',
+      'Retail chains face severe margin erosion from overstocking and stockout penalties due to complex seasonality, promotional events, and multi-store demand fluctuations.',
     solution:
-      'Built an ML pipeline to automatically validate claims, flag anomalies, and enforce role-based access control with comprehensive audit trails for compliance.',
+      'Engineered a scalable forecasting pipeline incorporating calendar dynamics, store features, and promotional spikes. Benchmarked multiple regression algorithms and deployed XGBoost with custom preprocessing served via Flask and Gunicorn.',
     impact:
-      'Enables faster claim processing while detecting suspicious patterns and maintaining full data governance over sensitive healthcare information.',
+      'Achieved a 94.99% R² score evaluated across 26,730 holdout test points, enabling high-accuracy inventory forecasting and replenishment planning.',
     features: [
-      'Automated insurance claim validation pipeline',
-      'ML-based anomaly detection',
-      'Secure role-based access control',
-      'Audit mechanisms for sensitive healthcare data',
+      'Forecasting: Sales forecasting pipeline on 3M+ records across 54 stores and 33 product families',
+      'Feature Engineering: Incorporated calendar, promotional, holiday, and external macroeconomic indicators',
+      'Evaluation & Deployment: Benchmarked regression architectures and deployed XGBoost with robust preprocessing',
+      'High Precision: Achieved 94.99% R² score on 26,730 test points',
+      'Production Serving: Integrated REST API with Flask and Gunicorn for scalable inference',
     ],
-    tech: ['Python', 'Scikit-learn', 'Machine Learning', 'Django', 'PostgreSQL', 'REST APIs'],
-    github: 'https://github.com/Manish219864/healthguard-ai', // Update repo name if different
+    tech: ['Python', 'Pandas', 'Scikit-learn', 'XGBoost', 'Flask', 'Gunicorn', 'Regression'],
+    github: 'https://github.com/Manish219864/DemandIQ',
     demo: null,
     color: '#22d3ee',
   },
   {
     id: 3,
-    title: 'GenAI-Based Financial Assistant',
+    title: 'HealthGuardAI — Healthcare Claims Validation',
+    status: 'Completed',
+    category: 'AI/ML',
+    description:
+      'An ML-powered anomaly detection and claims validation system developed during the Technocrats Hackathon to detect fraudulent healthcare billing patterns and duplicate claims.',
+    problem:
+      'Healthcare providers and insurers lose billions to fraudulent billing patterns, unusual claim amounts, and duplicate billing, while manual audits cause long review backlogs.',
+    solution:
+      'Contributed to the AI/ML component implementing machine learning anomaly detection to flag abnormal claim amounts and duplicate billing, accompanied by automated validation workflows.',
+    impact:
+      'Achieved 91.4% precision in identifying fraudulent claims and abnormal billing patterns during the Technocrats Hackathon.',
+    features: [
+      'Anomaly Detection: AI/ML component identifying unusual claim amounts and duplicate billing patterns',
+      'Precision: Achieved 91.4% precision in healthcare claims validation',
+      'Claims Validation: Engineered ML-based workflows to automatically flag abnormal billing for auditor review',
+      'Technocrats Hackathon duo project delivering fast, auditable claim processing',
+    ],
+    tech: ['Python', 'Scikit-learn', 'Anomaly Detection', 'Machine Learning', 'Django REST Framework', 'PostgreSQL'],
+    github: 'https://github.com/Manish219864/HealthGuardAI',
+    demo: null,
+    color: '#10b981',
+  },
+  {
+    id: 4,
+    title: 'GenAI Financial Assistant',
     status: 'Completed',
     category: 'Full-Stack',
     description:
-      'A full-stack GenAI-powered financial platform enabling intelligent data processing, visualization, and insights generation for personal and business finance management.',
+      'An intelligent financial assistant implementing Retrieval-Augmented Generation (RAG) with LangChain and FAISS, powered by a Django REST Framework backend and interactive React frontend.',
     problem:
-      'Users struggle to extract actionable insights from raw financial data spread across multiple sources.',
+      'Navigating dense transaction histories and expense records is tedious, preventing individuals and business owners from obtaining quick answers about spending patterns.',
     solution:
-      'Developed a full-stack platform using React, Django, PostgreSQL, and Celery with AI-powered data processing and automated dashboard generation.',
+      'Built a full-stack RAG-powered assistant that ingests expense data, computes vector embeddings into FAISS, and leverages LangChain to answer natural-language queries about transaction history.',
     impact:
-      'Provides users with real-time financial insights and automated reporting, reducing manual data analysis effort.',
+      'Enables natural-language conversational queries over historical financial data with instant retrieval, clear expense summaries, and contextual insights.',
     features: [
-      'Full-stack architecture: React + Django + PostgreSQL',
-      'Python & SQL financial data processing',
-      'AI-generated insights dashboards',
-      'Async task processing with Celery',
+      'Financial AI: Implemented RAG to answer natural-language queries over user transaction history',
+      'Vector Search: Integrated FAISS and dense vector embeddings for sub-second expense retrieval',
+      'Backend Architecture: Built robust API endpoints with Django REST Framework and PostgreSQL',
+      'Modern UI: Responsive React interface with interactive transaction breakdowns and chat experience',
     ],
-    tech: ['React', 'Django', 'PostgreSQL', 'Celery', 'Python', 'SQL', 'REST APIs'],
-    github: 'https://github.com/Manish219864/genai-financial-assistant', // Update repo name if different
+    tech: ['Python', 'Django REST Framework', 'React', 'LangChain', 'FAISS', 'RAG', 'Vector Embeddings', 'PostgreSQL'],
+    github: 'https://github.com/Manish219864/genai-financial-assistant',
     demo: null,
     color: '#7c3aed',
   },
   {
-    id: 4,
+    id: 5,
+    title: 'Customer Retail Analysis',
+    status: 'Completed',
+    category: 'AI/ML',
+    description:
+      'An exploratory and machine learning study analyzing 541K+ e-commerce transactions, diagnosing class imbalance, and benchmarking multiclass classification algorithms.',
+    problem:
+      'Extreme geographical and transactional class imbalances in retail datasets lead to misleading accuracy metrics and poor generalization on minority segments.',
+    solution:
+      'Analyzed 541K+ retail transaction records, benchmarked Logistic Regression, Decision Trees, and KNN on a 20,000-record holdout set, and diagnosed the accuracy paradox using multi-class confusion matrices.',
+    impact:
+      'Achieved 91.3% baseline accuracy; established critical evaluation frameworks demonstrating why Macro-F1 and training-only resampling are vital for imbalanced retail data.',
+    features: [
+      'Classification: Analyzed 541K+ e-commerce records and benchmarked Logistic Regression, Decision Tree, and KNN',
+      'Accuracy: Achieved 91.3% accuracy on a 20,000-record holdout evaluation set',
+      'Model Evaluation: Used 38-class confusion matrices to investigate geographic class imbalance',
+      'Identified Macro-F1 and training-only resampling strategies as necessary evaluation improvements',
+    ],
+    tech: ['Python', 'Pandas', 'Scikit-learn', 'Classification', 'Model Evaluation', 'Matplotlib'],
+    github: 'https://github.com/Manish219864/Customer_retail_analysis',
+    demo: null,
+    color: '#f59e0b',
+  },
+  {
+    id: 6,
     title: 'Chronic Kidney Disease Prediction',
     status: 'Completed',
     category: 'AI/ML',
     description:
-      'An ML classification model for early-stage Chronic Kidney Disease (CKD) detection using clinical patient data, with rigorous preprocessing and model optimization.',
+      'An early-stage disease prediction application developed during SmartBridge Experiential Learning, benchmarking multiple ML classifiers and serving predictions via Flask.',
     problem:
-      'Early detection of CKD is critical for preventing disease progression, yet diagnosis often happens too late in rural and low-resource healthcare settings.',
+      'Late diagnosis of Chronic Kidney Disease (CKD) severely impacts patient prognosis, particularly in low-resource clinics lacking specialized diagnostic tools.',
     solution:
-      'Built a Scikit-learn classification pipeline with advanced feature engineering, data preprocessing, and model evaluation to predict CKD from clinical markers.',
+      'Preprocessed clinical marker data and trained Logistic Regression, Random Forest, SVM, and ANN. Deployed the top-performing model via Flask with a patient input interface.',
     impact:
-      'Achieved high classification accuracy, providing a reliable screening tool that can assist clinicians in early CKD identification.',
+      'Logistic Regression achieved a reported recall of 1.0 (zero false negatives for critical disease detection), integrated into a clean web interface for rapid patient screening.',
     features: [
-      'ML classification using Scikit-learn',
-      'Data preprocessing & feature engineering',
-      'Model evaluation & optimization',
-      'Clinical marker analysis',
+      'Model Development: Preprocessed clinical data and compared Logistic Regression, Random Forest, SVM, and ANN',
+      'Recall: Logistic Regression achieved a reported recall of 1.0 on clinical evaluation data',
+      'Deployment: Integrated the selected model into a Flask application using Pickle serialization',
+      'User Interface: Built an accessible HTML/CSS interface for clinicians to input patient parameters',
     ],
-    tech: ['Python', 'Scikit-learn', 'Pandas', 'NumPy', 'Feature Engineering', 'Machine Learning'],
-    github: 'https://github.com/Manish219864/ckd-prediction', // Update repo name if different
+    tech: ['Python', 'Scikit-learn', 'Flask', 'Pandas', 'NumPy', 'Pickle'],
+    github: 'https://github.com/Manish219864/ckd-prediction',
     demo: null,
-    color: '#22d3ee',
+    color: '#06b6d4',
   },
 ];
 
@@ -242,11 +292,25 @@ export const experience = [
 // ---- ACHIEVEMENTS ----
 export const achievements = [
   {
-    title: 'Google Cloud Innovator Program',
-    description: 'Selected for the Google Cloud Innovator Program under the Cloud & AI track — a recognition for developers building innovative solutions on Google Cloud.',
+    title: 'Google Cloud Innovator Program (Cloud & AI Track)',
+    description: 'Selected for the Google Cloud Innovator Program under the Cloud & AI track — recognizing developers designing and building scalable AI solutions on Google Cloud.',
     icon: '☁️',
     tag: 'Google Cloud',
     color: '#6366f1',
+  },
+  {
+    title: 'Top 10 Finalist — Ideathon',
+    description: 'Finished as a Top 10 finalist among 100+ competing teams in a competitive Ideathon, demonstrating innovative problem-solving and rapid prototyping.',
+    icon: '🏆',
+    tag: 'Competition',
+    color: '#f59e0b',
+  },
+  {
+    title: 'ISRO IIRS Certified',
+    description: 'Certified by the Indian Space Research Organisation (ISRO) Indian Institute of Remote Sensing (IIRS) in Remote Sensing & Image Analysis.',
+    icon: '🛰️',
+    tag: 'Certification',
+    color: '#22d3ee',
   },
   {
     title: 'Google Developer Program Member',
@@ -262,24 +326,19 @@ export const achievements = [
     tag: 'Google I/O',
     color: '#7c3aed',
   },
-  {
-    title: 'Top 10 Finalist — University Ideathon',
-    description: 'Achieved Top 10 position in a university-level Ideathon competing against 100+ teams, demonstrating strong problem-solving, innovation, and presentation skills.',
-    icon: '🏆',
-    tag: 'Competition',
-    color: '#f59e0b',
-  },
-  {
-    title: 'ISRO IIRS Certified',
-    description: 'Certified by the Indian Space Research Organisation (ISRO) Indian Institute of Remote Sensing (IIRS) in Remote Sensing & Image Analysis.',
-    icon: '🛰️',
-    tag: 'Certification',
-    color: '#22d3ee',
-  },
 ];
 
 // ---- CERTIFICATIONS ----
 export const certifications = [
+  {
+    name: 'Google Cloud Innovator Program — Cloud & AI Track',
+    issuer: 'Google Cloud',
+    year: '2025',
+    type: 'Program Selection',
+    credentialId: null,
+    icon: '☁️',
+    color: '#6366f1',
+  },
   {
     name: 'ISRO IIRS — Remote Sensing & Image Analysis',
     issuer: 'Indian Space Research Organisation (ISRO)',
@@ -299,18 +358,9 @@ export const certifications = [
     color: '#6366f1',
   },
   {
-    name: 'Google Cloud Innovator Program',
-    issuer: 'Google Cloud',
-    year: '',
-    type: 'Program',
-    credentialId: null,
-    icon: '☁️',
-    color: '#6366f1',
-  },
-  {
     name: 'Google I/O 2026',
     issuer: 'Google',
-    year: '',
+    year: '2026',
     type: 'Event / Program',
     credentialId: null,
     icon: '🎯',

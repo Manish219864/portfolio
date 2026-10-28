@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 const stats = [
   { value: 8.95, suffix: '', label: 'CGPA', decimals: 2, icon: '🎓' },
-  { value: 4, suffix: '+', label: 'Projects Built', decimals: 0, icon: '🚀' },
+  { value: 6, suffix: '+', label: 'Projects Built', decimals: 0, icon: '🚀' },
   { value: 5, suffix: '+', label: 'Recognitions', decimals: 0, icon: '🏆' },
   { value: 2, suffix: '+', label: 'Years Building AI', decimals: 0, icon: '🤖' },
 ];

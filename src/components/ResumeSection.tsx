@@ -44,7 +44,7 @@ export default function ResumeSection() {
 
           <h3 style={{ fontWeight: 700, fontSize: '1.2rem', marginBottom: '0.5rem' }}>Manish Jha — Resume</h3>
           <p style={{ color: '#94a3b8', fontSize: '0.9rem', marginBottom: '0.5rem' }}>
-            B.Tech CSE (AI &amp; ML) · AI Engineer · ML Developer
+            B.Tech CSE (AI &amp; ML) · Generative AI Specialist · AI &amp; ML Engineer
           </p>
           <p style={{ color: '#64748b', fontSize: '0.8rem', marginBottom: '2rem' }}>
             Updated 2026 · PDF Format
@@ -53,11 +53,12 @@ export default function ResumeSection() {
           {/* Highlights */}
           <div style={{ background: 'rgba(255,255,255,0.03)', borderRadius: 12, padding: '1.25rem', marginBottom: '2rem', textAlign: 'left' }}>
             {[
-              'CGPA: 8.95 at D Y Patil University',
-              'LangChain · RAG · FAISS · LLM Systems',
-              'Django · FastAPI · PostgreSQL · REST APIs',
-              'Google Cloud Innovator · ISRO IIRS Certified',
-              'Top 10 University Ideathon Finalist',
+              'Specializing in Generative AI, Scalable LLM Apps & RAG Systems',
+              'Python, LangChain, FAISS, Llama3, Pydantic & OCR (pdfplumber)',
+              'Production ML: XGBoost (94.99% R² on 3M+ records), Scikit-learn',
+              'Django REST Framework, FastAPI, Streamlit, Docker, PostgreSQL',
+              'Google Cloud Innovator (Cloud & AI Track) · ISRO IIRS Certified',
+              'Top 10 Finalist in University Ideathon (100+ teams)',
             ].map(item => (
               <div key={item} style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#94a3b8', fontSize: '0.82rem', padding: '0.3rem 0' }}>
                 <span style={{ color: '#22d3ee', fontSize: '0.6rem' }}>◆</span>

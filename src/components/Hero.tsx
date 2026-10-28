@@ -125,7 +125,7 @@ export default function Hero() {
                     animation: 'pulse 2s infinite',
                   }}
                 />
-                Open to AI Engineer &amp; ML Engineer roles
+                Open to Generative AI &amp; ML Engineer roles
               </div>
             </motion.div>
 
@@ -162,15 +162,15 @@ export default function Hero() {
             >
               <TypeAnimation
                 sequence={[
-                  'Machine Learning Developer',
+                  'Generative AI Specialist',
                   2000,
-                  'AI Engineer',
+                  'Scalable LLM Applications Builder',
                   2000,
-                  'LLM & RAG Systems Builder',
+                  'AI / ML Engineer',
+                  2000,
+                  'RAG & AI Agents Developer',
                   2000,
                   'Python Backend Engineer',
-                  2000,
-                  'Full-Stack Developer',
                   2000,
                 ]}
                 wrapper="span"
@@ -193,10 +193,9 @@ export default function Hero() {
                 maxWidth: '620px',
               }}
             >
-              B.Tech CSE (AI &amp; ML) graduate from D Y Patil University with a <strong style={{ color: 'white' }}>CGPA of 8.95</strong>. 
-              I build production-ready AI systems — from LLM-powered RAG pipelines and intelligent ML models 
-              to full-stack web applications. Currently building&nbsp;
-              <span style={{ color: '#22d3ee', fontWeight: 600 }}>CredIntel</span>, an AI Credit Risk Decision Engine.
+              B.Tech CS graduate specializing in <strong style={{ color: 'white' }}>Generative AI</strong>, 
+              with hands-on experience building scalable LLM applications using <span style={{ color: '#22d3ee', fontWeight: 600 }}>Python and LangChain</span>. 
+              Adept at data preprocessing and deploying AI-driven agents to solve complex business requirements. Graduated from D Y Patil University with a <strong style={{ color: 'white' }}>CGPA of 8.95</strong>.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -324,7 +323,7 @@ export default function Hero() {
           >
             {[
               { label: 'CGPA', value: '8.95', sub: 'D Y Patil University' },
-              { label: 'Projects', value: '4+', sub: 'AI & Full-Stack' },
+              { label: 'Projects', value: '6+', sub: 'AI & Full-Stack' },
               { label: 'Recognition', value: '5+', sub: 'Awards & Programs' },
             ].map(stat => (
               <motion.div
